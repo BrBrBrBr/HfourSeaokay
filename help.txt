@@ -1,0 +1,29 @@
+------Help------
+
+----Login Screen-----
+
+Enter a username and password of an existing account
+
+-----Admin Page-----
+
+All buttons functions are as explained on the button
+
+*Sub features
+
+	When entering data it is important that the admin is maticulous with the 
+	validity.
+
+	complete all fields
+
+	The interface between adding/removing a pharmacist is the same as 
+	adding/removing a drug
+
+------Dispensory-------
+
+Click and selecting the drugs on the table to add/remove from cart is possible
+
+checkout displays the price due
+
+	*NB it is up to the pharmacist to account for all money
+ 
+-------------------------

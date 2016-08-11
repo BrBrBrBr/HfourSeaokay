@@ -5,17 +5,22 @@
  */
 package hfourseaokay;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author brinlee
  */
 public class Help extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Help
-     */
+    
     public Help() {
         initComponents();
+        stuff.setVisible(false);
+        stuff.doClick();
     }
 
     /**
@@ -27,21 +32,73 @@ public class Help extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txaOut = new javax.swing.JTextArea();
+        stuff = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        txaOut.setColumns(20);
+        txaOut.setRows(5);
+        jScrollPane1.setViewportView(txaOut);
+
+        stuff.setText("jButton1");
+        stuff.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stuffActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 638, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(stuff, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(stuff)
+                .addContainerGap(557, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void stuffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stuffActionPerformed
+        
+        BufferedReader reader = null;
+        String textFile = "help.txt";
+        try{
+
+            reader = new BufferedReader(new FileReader(textFile));
+
+            String line = "";
+
+            System.out.println("\nReading file using BufferedReader");
+
+            while (line != null){
+                line = reader.readLine();
+                if(line != null){
+                    txaOut.append(line+"\n");
+                }
+            }
+
+
+            reader.close();
+
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_stuffActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +136,8 @@ public class Help extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton stuff;
+    private javax.swing.JTextArea txaOut;
     // End of variables declaration//GEN-END:variables
 }

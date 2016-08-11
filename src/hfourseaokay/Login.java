@@ -28,12 +28,8 @@ public class Login {
             
             Connection connection = connectionManager.getConnection();
 
-         
-            
-
             //"SELECT * FROM MEMBERS WHERE ID=" + user + " AND PASSWORD='" + pass + "'";
             // String SQLadmin = "SELECT * FROM PHARMACISTDATA WHERE USERNAME=" + user + " AND PASSWORD='" + pass + "AND ISADMIN="+ isAdmin;
-            
             
             PreparedStatement preparedStatement = 
                     connection.prepareStatement("SELECT * FROM "
@@ -63,8 +59,7 @@ public class Login {
             }else{
                 JOptionPane.showMessageDialog(null, "Login Unsuccessful");
             }
-                
-                
+                       
         }
         
         catch(SQLException error){
