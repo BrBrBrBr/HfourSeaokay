@@ -5,10 +5,15 @@ import hfourseaokay.admin.AddPharmacistPanel;
 import hfourseaokay.admin.RemoveDrugPanel;
 import hfourseaokay.admin.RemovePharmacistPanel;
 import java.awt.BorderLayout;
+import javax.swing.JPanel;
 
 public class AdminPage extends javax.swing.JFrame {
+    
+    JPanel contentPanel = new JPanel();
 
     public AdminPage() {
+        
+      
         initComponents();
         viewPanel.setLayout(new BorderLayout());
     }
@@ -127,7 +132,11 @@ public class AdminPage extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         RemovePharmacistPanel panel = new RemovePharmacistPanel();
         
-        viewPanel.add(panel, BorderLayout.CENTER);
+        viewPanel.remove(contentPanel);
+        
+        contentPanel = panel;
+        
+        viewPanel.add(contentPanel, BorderLayout.CENTER);
         
         viewPanel.repaint();
         viewPanel.revalidate();
@@ -158,10 +167,11 @@ public class AdminPage extends javax.swing.JFrame {
         
         AddDrugPanel panel = new AddDrugPanel();
         
-        viewPanel.add(panel, BorderLayout.CENTER);
+        viewPanel.remove(contentPanel);
         
-        viewPanel.repaint();
-        viewPanel.revalidate();
+        contentPanel = panel;
+        
+        viewPanel.add(contentPanel, BorderLayout.CENTER);
         
         repaint();
         revalidate();
@@ -177,7 +187,11 @@ public class AdminPage extends javax.swing.JFrame {
         
         RemoveDrugPanel panel = new RemoveDrugPanel();
         
-        viewPanel.add(panel, BorderLayout.CENTER);
+        viewPanel.remove(contentPanel);
+        
+        contentPanel = panel;
+        
+        viewPanel.add(contentPanel, BorderLayout.CENTER);
         
         viewPanel.repaint();
         viewPanel.revalidate();
@@ -190,10 +204,11 @@ public class AdminPage extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         AddPharmacistPanel panel = new AddPharmacistPanel();
         
-        viewPanel.add(panel, BorderLayout.CENTER);
+        viewPanel.remove(contentPanel);
         
-        viewPanel.repaint();
-        viewPanel.revalidate();
+        contentPanel = panel;
+        
+        viewPanel.add(contentPanel, BorderLayout.CENTER);
         
         repaint();
         revalidate();

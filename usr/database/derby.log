@@ -1,37 +1,7 @@
-Wed Aug 10 23:58:11 SAST 2016 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
+Thu Aug 11 08:09:12 SAST 2016 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Wed Aug 10 23:58:19 SAST 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0156-7676-7b75-0000406e181a 
-on database directory /home/brinlee/NetBeansProjects/HfourSeaokay/usr/database/drugdatabase with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
-Loaded from file:/home/brinlee/javaCentre/glassfish-4.1.1/javadb/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_102-b14
-user.dir=/home/brinlee/javaCentre/glassfish-4.1.1/javadb
-os.name=Linux
-os.arch=amd64
-os.version=4.6.3-1-ARCH
-derby.system.home=/home/brinlee/NetBeansProjects/HfourSeaokay/usr/database
-Database Class Loader started - derby.database.classpath=''
-----------------------------------------------------------------
-Thu Aug 11 00:47:24 SAST 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance 65548115-0156-7676-7b75-0000406e181a 
-on database directory /home/brinlee/NetBeansProjects/HfourSeaokay/usr/database/database with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
-Loaded from file:/home/brinlee/javaCentre/glassfish-4.1.1/javadb/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_102-b14
-user.dir=/home/brinlee/javaCentre/glassfish-4.1.1/javadb
-os.name=Linux
-os.arch=amd64
-os.version=4.6.3-1-ARCH
-derby.system.home=/home/brinlee/NetBeansProjects/HfourSeaokay/usr/database
-Database Class Loader started - derby.database.classpath=''
-----------------------------------------------------------------
-Thu Aug 11 00:47:25 SAST 2016:
-Shutting down instance 65548115-0156-7676-7b75-0000406e181a on database directory /home/brinlee/NetBeansProjects/HfourSeaokay/usr/database/database with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
-Thu Aug 11 00:47:25 SAST 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = database), (DRDAID = {16}), Database 'database' shutdown.
-----------------------------------------------------------------
-Thu Aug 11 00:47:28 SAST 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance db5601b1-0156-7676-7b75-0000406e181a 
+Thu Aug 11 08:09:12 SAST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0156-7838-0305-0000406e181a 
 on database directory /home/brinlee/NetBeansProjects/HfourSeaokay/usr/database/database with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
 Loaded from file:/home/brinlee/javaCentre/glassfish-4.1.1/javadb/lib/derby.jar
 java.vendor=Oracle Corporation
